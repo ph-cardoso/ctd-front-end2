@@ -150,10 +150,12 @@ main {
       color:var(--secondary-color);
       padding: 0.6rem 5rem;
       text-decoration:none;
+      transition: all 200ms ease-in-out;
 
       &:hover {
         background-color: var(--secondary-color);
         color: var(--primary-color);
+        transform: scale(1.1);
       }
     }
   }
