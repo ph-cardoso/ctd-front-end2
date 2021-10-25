@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #171717;
+  --secondary-color: #EDEDED;
+  --accent-color: #F78812;
+}
+
+.lightmode {
+  --primary-color: #FAFAF6;
+  --secondary-color: #171717;
+  --accent-color: #6900FF;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: var(--secondary-color);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+header .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #joystick-ico, header #dark-mode-toggle {
+  width: 2rem;
+}
+
+header #dark-mode-toggle {
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+header #dark-mode-toggle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main {
+  color: var(--secondary-color);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 7rem 1fr 1fr;
+      grid-template-rows: 7rem 1fr 1fr;
+  gap: 0px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "player-score pc-score" "result result" "input input";
+}
+
+.grid-container .player-score {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: player-score;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.grid-container .player-score h3 {
+  margin-bottom: 0.4rem;
+}
+
+.grid-container .accent-color {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--accent-color);
+}
+
+.grid-container .pc-score {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pc-score;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.grid-container .pc-score h3 {
+  margin-bottom: 0.4rem;
+}
+
+.grid-container .result {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: result;
+}
+
+.grid-container .result .display-resultado {
+  text-align: center;
+  color: var(--accent-color);
+  visibility: hidden;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.grid-container .input {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: input;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-container .input .input-field {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 2px solid var(--accent-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.grid-container .input ::-webkit-input-placeholder {
+  color: var(--secondary-color);
+}
+
+.grid-container .input :-ms-input-placeholder {
+  color: var(--secondary-color);
+}
+
+.grid-container .input ::-ms-input-placeholder {
+  color: var(--secondary-color);
+}
+
+.grid-container .input ::placeholder {
+  color: var(--secondary-color);
+}
+
+.grid-container .input .btnPlay {
+  margin-top: 1rem;
+  background-color: var(--accent-color);
+  border-radius: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--secondary-color);
+  padding: 0.6rem 5rem;
+  text-decoration: none;
+}
+
+.grid-container .input .btnPlay:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+footer {
+  position: absolute;
+  padding: 0;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+@media (min-width: 767px) {
+  header {
+    padding-bottom: 2rem;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header #joystick-ico, header #dark-mode-toggle {
+    width: 4rem;
+  }
+  .player-score, .pc-score {
+    font-size: 2rem;
+  }
+  .grid-container .accent-color {
+    font-size: 2rem;
+  }
+  .grid-container .result .display-resultado {
+    font-size: 2.5rem;
+    padding-top: 4rem;
+  }
+  .grid-container .input label, .grid-container .input .input-field, .grid-container .input .btnPlay {
+    font-size: 1.5rem;
+  }
+  .grid-container .input .btnPlay {
+    padding: 1rem 8rem;
+  }
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  header {
+    padding-bottom: 4rem;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  header #joystick-ico, header #dark-mode-toggle {
+    width: 5rem;
+  }
+  .player-score, .pc-score {
+    font-size: 2.5rem;
+  }
+  .grid-container .accent-color {
+    font-size: 3  rem;
+  }
+  .grid-container .result .display-resultado {
+    font-size: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+  }
+  .grid-container .input label, .grid-container .input .input-field, .grid-container .input .btnPlay {
+    font-size: 2.4rem;
+  }
+  .grid-container .input .btnPlay {
+    padding: 1.1rem 12rem;
+  }
+  footer p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding-bottom: 2rem;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header #joystick-ico, header #dark-mode-toggle {
+    width: 4rem;
+  }
+  .player-score, .pc-score {
+    font-size: 2rem;
+  }
+  .grid-container .accent-color {
+    font-size: 2rem;
+  }
+  .grid-container .result .display-resultado {
+    font-size: 2.5rem;
+    padding-top: 4rem;
+  }
+  .grid-container .input label, .grid-container .input .input-field, .grid-container .input .btnPlay {
+    font-size: 1.5rem;
+  }
+  .grid-container .input .btnPlay {
+    padding: 1rem 8rem;
+  }
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
