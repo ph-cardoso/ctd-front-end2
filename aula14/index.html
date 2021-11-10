@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../homepage/img/html-icon.png" type="image/x-icon">
+    <title>Mesa de Trabalho Aula 14</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Formulário de contato</h1>
+            <fieldset id="dados-pessoais">
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome Completo</label>
+                <input class="input-text" type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <label for="telefone">Telefone</label>
+                <input class="input-text" type="text" name="telefone" id="telefone" placeholder="XX XXXXX-XXXX" required>
+            </fieldset>
+            <input id="submit-button" type="submit" value="Enviar">
+            <div class="display-inputs" id="display-inputs">
+            </div>
+        </form>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
