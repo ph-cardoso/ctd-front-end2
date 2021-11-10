@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../homepage/img/html-icon.png" type="image/x-icon">
+    <title>Mesa de Trabalho Aula 13</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Formulário de contato</h1>
+            <fieldset id="dados-pessoais">
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome Completo</label>
+                <input class="input-text" type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <div>
+                    <ul id="name-errors"></ul>
+                </div>
+                <label for="telefone">Telefone</label>
+                <input class="input-text" type="text" name="telefone" id="telefone" placeholder="XX XXXXX-XXXX" required>
+                <div>
+                    <ul id="phone-errors"></ul>
+                </div>
+            </fieldset>
+            <fieldset id="hobbies">
+                <legend>Hobbies</legend>
+
+                <input class="input-checkbox" type="checkbox" id="cinema" name="cinema" value="Cinema">
+                <label for="cinema">Ir ao cinema</label>
+                <input class="input-checkbox" type="checkbox" id="anime" name="anime" value="Anime">
+                <label for="anime">Assistir anime</label>
+                <input class="input-checkbox" type="checkbox" id="leitura" name="leitura" value="Leitura">
+                <label for="leitura">Ler um livro</label>
+                <input class="input-checkbox" type="checkbox" id="fotografia" name="fotografia" value="Fotografia">
+                <label for="fotografia">Fotografar</label>
+            </fieldset>
+
+            <input id="submit-button" type="submit" value="Enviar">
+        </form>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
