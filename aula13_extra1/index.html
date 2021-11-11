@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../homepage/img/html-icon.png" type="image/x-icon">
+    <title>Mesa de Trabalho Aula 13</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Formulário de contato</h1>
+            <fieldset id="dados-pessoais">
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome Completo</label>
+                <input class="input-text" type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+            </fieldset>
+            <fieldset id="hobbies">
+                <legend>Hobbies</legend>
+
+                <div>
+                    <input class="input-checkbox" type="checkbox" id="videogame" name="videogame">
+                    <label for="videogame">Video game</label>
+                    <input class="input-checkbox" type="checkbox" id="cozinha" name="cozinha">
+                    <label for="anime">Cozinha</label>
+                    <input class="input-checkbox" type="checkbox" id="guitarra" name="guitarra">
+                    <label for="guitarra">Guitarra</label>
+                </div>
+                <div>
+                    <input class="input-checkbox" type="checkbox" id="leitura" name="leitura">
+                    <label for="leitura">Leitura</label>
+                    <input class="input-checkbox" type="checkbox" id="netflix" name="netflix">
+                    <label for="netflix">Netflix</label>
+                    <input class="input-checkbox" type="checkbox" id="cortecostura" name="cortecostura">
+                    <label for="cortecostura">Corte e Costura</label>
+                </div>
+            </fieldset>
+
+            <input id="submit-button" type="submit" value="Enviar">
+        </form>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
