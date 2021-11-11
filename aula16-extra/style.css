@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #F78812;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    padding: 2.5rem 4rem;
+    background-color: #E02401;
+    box-shadow: 4px 4px 30px 2px #191919;
+}
+
+.progress {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #B2B1B9;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 14px #2e2e2e;
+}
+
+.progress#life-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 2rem;
+    width: 100%;
+    height: 2rem;
+    background-color: #FF5DA2;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 14px #2e2e2e;
+}
+
+#bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 0%;
+    height: 2rem;
+    background-color: #FFD523;
+    border-radius: 0.5rem;
+}
+
+.level-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+    background-color: #FFD523;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 14px #2e2e2e;
+}
+
+.level-btn:hover {
+    transform: scale(1.1);
+}
+
+.level-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #FFD523;
+    border-radius: 1.5rem;
+    box-shadow: 4px 4px 14px #2e2e2e;
+}
+
+#level-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #221c1c;
+}
+
+#percentage-text {
+    visibility: hidden;
+}
